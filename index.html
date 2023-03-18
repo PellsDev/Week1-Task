@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week1 Task</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400&family=Saira+Condensed:wght@200;300&display=swap");
+    </style>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #2c3e50;
+      max-width: 100%;
+      max-height: 100vh;
+    }
+
+    fieldset {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+      height: 50vh;
+      margin-top: 12rem;
+      box-shadow: 1px 1px 4px;
+      border: none;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+      margin-inline: 3rem;
+      text-align: center;
+    }
+
+    #name {
+      margin-bottom: 0.5rem;
+      border-radius: 0.5rem;
+      height: 4vh;
+      border: none;
+      box-shadow: 1px 1px 4px;
+      background-color: #2c3e50;
+    }
+
+    #EmailAddress {
+      margin-bottom: 0.5rem;
+      border-radius: 0.5rem;
+      height: 4vh;
+      border: none;
+      background-color: #2c3e50;
+      box-shadow: 1px 1px 4px;
+    }
+
+    #PhoneNumber {
+      margin-bottom: 0.5rem;
+      border-radius: 0.5rem;
+      height: 4vh;
+      border: none;
+      background-color: #2c3e50;
+      box-shadow: 1px 1px 4px;
+    }
+
+    .gender {
+      margin: auto;
+      margin-inline: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    #Password {
+      margin-bottom: 0.5rem;
+      border-radius: 0.5rem;
+      height: 4vh;
+      border: none;
+      background-color: #2c3e50;
+      box-shadow: 1px 1px 4px;
+      /* color: red;
+      background-color: blue; */
+    }
+
+    button {
+      margin: auto;
+      border-radius: 0.5rem;
+      margin-left: 4rem;
+      width: 30%;
+      cursor: pointer;
+      background-color: #2c3e50;
+    }
+  </style>
+
+  <body>
+    <!-- <form action=""></form> -->
+
+    <fieldset>
+      <h1>Welcome</h1>
+      <p>Enter your details to get started</p>
+      <form class="logindetails">
+        <input type="text" id="name" name="name" placeholder="Name" /> <br />
+        <input
+          type="text"
+          id="EmailAddress"
+          name="Email Address"
+          placeholder="Email Address"
+        />
+        <br />
+        <input
+          type="text"
+          id="PhoneNumber"
+          name="Phone Number"
+          placeholder="Phone Number"
+        />
+        <br />
+        <div class="gender">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male" checked />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female" />
+        </div>
+
+        <input
+          type="text"
+          id="Password"
+          name="Password"
+          placeholder="Password"
+        />
+        <br />
+        <button>submit</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
